@@ -1,0 +1,153 @@
+html {
+  cursor: cell;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+input,
+button {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+input {
+  border: 2px solid black;
+}
+
+input:focus {
+  outline: none;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  display: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: black;
+}
+
+button {
+  cursor: cell;
+  background: none;
+  border: none;
+  border-right: 2px solid black;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+h3 {
+  margin: 0;
+  font-weight: normal;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  height: 323.2px;
+  width: 300px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+li {
+  list-style: none;
+  margin-top: 5px;
+  cursor: cell;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid black;
+  padding: 10px;
+  user-select: none;
+}
+
+img {
+  cursor: cell;
+  width: 25px;
+  height: 25px;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}
+
+span {
+  word-break: break-all;
+  text-align: left;
+  font-size: 18px;
+}
+
+[contenteditable] {
+  outline: none;
+}
+
+.container {
+  max-width: 510px;
+  margin-top: 130px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.wrapper {
+  min-height: 400px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  border: 2px solid black;
+}
+
+.act {
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 5px;
+}
+
+.check {
+  text-decoration: line-through;
+}
+
+.adjust {
+  flex-grow: 1;
+  text-align: start;
+  position: relative;
+}
+
+.group {
+  display: flex;
+}
+
+.line {
+  position: absolute;
+  background: black;
+  height: 5px;
+  width: 100%;
+  top: 8px;
+}
+
+.filter button:first-child {
+  border-left: 2px solid black;
+}
+
+.filter button:last-child {
+  min-width: unset;
+}
+
+.filter button {
+  min-width: 86px;
+}
+
+.filter img {
+  width: 12px;
+}
